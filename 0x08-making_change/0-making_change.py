@@ -1,4 +1,18 @@
+#!/usr/bin/python3
+"""
+This dynamic programming solution uses an array dp to store the
+minimum number of coins needed to make change for each amount
+from 0 to total. The outer loop iterates over each coin, and
+the inner loop updates the dp array based on the current coin's value.
+The final result is stored in dp[total],
+or -1 if it's still initialized as float('inf').
+"""
+
+
 def makeChange(coins, total):
+    """
+    function to implement make change
+    """
     if total <= 0:
         return 0
 
