@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+"""
+module containing the function
+"""
 
 
 def isWinner(x, nums):
+    """
+    function checking for winner
+    """
     def sieve(n):
         primes = []
         sieve = [True] * (n+1)
@@ -13,6 +19,9 @@ def isWinner(x, nums):
         return primes
 
     def can_win(n, primes):
+        """
+        check the possibly of wins
+        """
         if n == 1:
             return False
         if n in primes:
